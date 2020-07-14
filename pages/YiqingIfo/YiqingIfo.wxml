@@ -1,0 +1,119 @@
+<view class="news_category">
+<!-- 顶部搜索框 -->
+    <SearchInput></SearchInput>
+    <view class="cates">
+        
+    <!-- 左侧菜单栏 -->
+        <scroll-view class="left_menu_list" scroll-y >
+            <view 
+            class="menu_item {{index===currentIndex?'active':''}}"
+            wx:for="{{leftMenuList}}" 
+            wx:key="*this"
+            bindtap="handleItemTap"
+            data-index="{{index}}">
+            {{item}}
+            </view>
+        </scroll-view>
+        <!-- 右侧内容区 -->
+        <scroll-view class="right_content" 
+        scroll-y 
+        >
+            <!-- 第一栏内容 -->
+            <view wx:if="{{currentIndex==0}}"
+            class="news" 
+            wx:for="{{rightNewsList1}}"
+            wx:key="id">
+                <i-card  i-class="blod_font" title="{{item.title}}"  >
+                <view  slot="content">
+                    {{item.summary}}
+                </view>
+                <view  slot="footer">
+                    {{item.infoSource}}
+                </view>
+                 <view  slot="footer">
+                    {{item.date}}
+                </view>
+                   <view  slot="footer">
+                    点击量：{{item.tag}}
+                    </view>
+                </i-card>
+            </view>
+            <!-- 第二栏内容 -->
+            <view wx:if="{{currentIndex==1}}"
+            class="news" 
+            wx:for="{{rightNewsList2}}"
+            wx:key="id">
+                <i-card  i-class="blod_font" title="{{item.title}}"  >
+                <view  slot="content">
+                    {{item.summary}}
+                </view>
+                <view  slot="footer">
+                    {{item.infoSource}}
+                </view>
+                <view  slot="footer">
+                    {{item.date}}
+                </view>
+                <view  slot="footer">
+                    点击量：{{item.tag}}
+                    </view>
+                </i-card>
+            </view>
+            <!-- 第三栏内容 -->
+            <view wx:if="{{currentIndex==2}}"
+                class="news">
+                <van-panel title="现存确诊人数" 
+                desc="{{nationIfo.currentConfirmedCount}}" 
+                status="{{nationIfo.suspectedIncr>0?'↑'+nationIfo.suspectedIncr:'↓'+nationIfo.suspectedIncr}}">
+                </van-panel>
+                <van-panel title="累计确诊人数"
+                desc="{{nationIfo.confirmedCount}}" 
+                status="{{nationIfo.currentConfirmedIncr>0?'↑'+nationIfo.currentConfirmedIncr:'↓'+nationIfo.currentConfirmedIncr}}">
+                </van-panel>
+                <van-panel title="现存疑似人数" 
+                desc="{{nationIfo.suspectedCount}}" 
+                status="{{nationIfo.confirmedIncr>0?'↑'+nationIfo.confirmedIncr:'↓'+nationIfo.confirmedIncr}}">
+                </van-panel>
+                <van-panel title="累计治愈人数" 
+                desc="{{nationIfo.curedCount}}" 
+                status="{{nationIfo.curedIncr>0?'↑'+nationIfo.curedIncr:'↓'+nationIfo.curedIncr}}">
+                </van-panel>
+                <van-panel title="累计死亡人数" 
+                desc="{{nationIfo.deadCount}}" 
+                status="{{nationIfo.deadIncr>0?'↑'+nationIfo.deadIncr:'↓'+nationIfo.deadIncr}}">
+                </van-panel>
+                <van-panel title="现存重症人数" 
+                desc="{{nationIfo.seriousCount}}" 
+                status="{{nationIfo.seriousIncr>0?'↑'+nationIfo.seriousIncr:'↓'+nationIfo.seriousIncr}}">
+                </van-panel>
+            </view>
+             <!-- 第四栏内容 -->
+            <view wx:if="{{currentIndex==3}}"
+            class="news">
+            <van-panel title="现存确诊人数" 
+            desc="{{foreignIfo.currentConfirmedCount}}" 
+            status="{{foreignIfo.suspectedIncr>0?'↑'+foreignIfo.suspectedIncr:'↓'+foreignIfo.suspectedIncr}}">
+            </van-panel>
+            <van-panel title="累计确诊人数"
+            desc="{{foreignIfo.confirmedCount}}" 
+            status="{{foreignIfo.currentConfirmedIncr>0?'↑'+foreignIfo.currentConfirmedIncr:'↓'+foreignIfo.currentConfirmedIncr}}">
+            </van-panel>
+            <van-panel title="现存疑似人数" 
+            desc="{{foreignIfo.suspectedCount}}" 
+            status="{{foreignIfo.confirmedIncr>0?'↑'+foreignIfo.confirmedIncr:'↓'+foreignIfo.confirmedIncr}}">
+            </van-panel>
+            <van-panel title="累计治愈人数" 
+            desc="{{foreignIfo.curedCount}}" 
+            status="{{foreignIfo.curedIncr>0?'↑'+foreignIfo.curedIncr:'↓'+foreignIfo.curedIncr}}">
+            </van-panel>
+            <van-panel title="累计死亡人数" 
+            desc="{{foreignIfo.deadCount}}" 
+            status="{{foreignIfo.deadIncr>0?'↑'+foreignIfo.deadIncr:'↓'+foreignIfo.deadIncr}}">
+            </van-panel>
+            <!-- <van-panel title="现存重症人数" 
+            desc="{{foreignIfo.seriousCount}}" 
+            status="{{foreignIfo.seriousIncr>0?'↑'+foreignIfo.seriousIncr:'↓'+foreignIfo.seriousIncr}}">
+            </van-panel> -->
+        </view>
+        </scroll-view>
+    </view>
+</view>

@@ -1,0 +1,25 @@
+@import './style/icon.wxss';
+
+
+page,view,text,swiper,swiper-item,image,navigator
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+page{
+  /* 定义主体颜色 以变量形式存贮，简化操作
+使用方式： view{
+            color:var(--themeColor);
+              }
+
+              或
+                background-color: var(--themeColor);
+*/
+  --themeColor:#55b7f8;
+  /* 
+    统一字体大小 假设 设计稿大小是 375px
+ */
+  font-size: 28rpx;
+}

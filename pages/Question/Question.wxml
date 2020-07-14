@@ -1,0 +1,43 @@
+<view class="question_main">
+  <!-- 提示语 -->
+  <view class="main_content" style="white-space:pre-wrap" >
+        <image mode="widthFix" src="../../icos/jiqiren.png" class="content_icon"></image>
+        <view class="content">  
+        {{tips}}
+        <view wx:for="{{hottopics}}"
+        wx:key="*this"
+        style="color:var(--themeColor)"
+        bindtap="handleTapHottopic"
+        data-index="{{index}}"
+        >
+        {{item}}
+        </view>
+        </view>
+
+  </view>
+  <!-- 主体对话框 -->
+  <view class="main_content" 
+  wx:for="{{content}}" 
+  wx:key="*this">
+    <!-- 头像图标 -->
+    <image mode="widthFix" src="../../icos/jiqiren.png" class="content_icon"></image>
+    <!-- 聊天框中的内容 -->
+    <text class="content">  {{item}}</text>
+  </view>
+  <view class='placeholder-view'></view>
+  <!-- 提示框 -->
+  <block v-if="{{istyping}}">
+
+  </block>
+  <!-- 输入框 -->
+  <view class="main_input">
+    <view class="inpunt_item">
+      <input class="input_content" placeholder="请输入您要问的内容" 
+      bindinput="bindKeyInput"
+      />
+      <button class="input_button" >
+        发送
+      </button>
+    </view>
+  </view>
+</view>

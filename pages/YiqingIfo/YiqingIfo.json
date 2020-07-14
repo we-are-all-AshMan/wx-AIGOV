@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "SearchInput":"../../components/SearchInput/SearchInput",
+    "i-card": "../../dist/card/index",
+    "van-panel": "../../van-dist/panel/index"
+    },
+  "navigationBarTitleText": "疫情信息"
+}

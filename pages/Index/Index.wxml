@@ -1,0 +1,57 @@
+<view class="index">
+
+    <van-grid column-num="3" >
+        <van-grid-item 
+        icon="../../icos/zhengce2.png" 
+        text="政务办理" 
+        link-type="navigateTo"
+        url=""
+        />
+        <van-grid-item 
+        icon="../../icos/peizhitubiaosvg-.png" 
+        text="便民服务" 
+        link-type="navigateTo"
+        url="../../pages/ConService/ConService"
+        />     
+        <van-grid-item 
+        icon="../../icos/tubiaozhizuomoban-.png" 
+        text="热门话题" 
+        link-type="navigateTo"
+        url=""
+        />      
+    </van-grid>
+
+    <view class="index_swiper">
+        <swiper autoplay="true" indicator-dots="true" circular="true" interval="2000">
+            <swiper-item wx:for="{{swiperList}}" wx:key="id">
+                <navigator url="">
+                    <image mode="widthFix" src="{{item.img}}"/>
+                </navigator>
+            </swiper-item>
+        </swiper>
+    </view>
+
+    <view
+    wx:for="{{hotTopics}}"
+    wx:key="*this"
+    >
+    <i-notice-bar icon="systemprompt" loop>
+        {{item}}
+    </i-notice-bar>
+    </view>
+    
+    <view class="region">
+     <van-grid column-num="2" border="true" >
+        <van-grid-item use-slot>
+            <image  mode="widthFix" src="../../gaokaozhuanqu.jpg" />
+            <text>高考专区</text>
+            提供高考服务
+        </van-grid-item>
+        <van-grid-item use-slot>
+            <image mode="widthFix" src="../../shebaofuwu.png" />
+               <text>高考专区</text>
+            提供高考服务
+        </van-grid-item>
+    </van-grid>
+    </view> 
+</view>

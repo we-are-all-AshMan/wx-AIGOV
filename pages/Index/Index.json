@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+      "i-notice-bar": "../../dist/notice-bar/index",
+      "van-grid": "../../van-dist/grid/index",
+      "van-grid-item": "../../van-dist/grid-item/index",
+      "i-card": "../../dist/card/index",
+      "van-card": "../../van-dist/card/index"
+  }
+}
