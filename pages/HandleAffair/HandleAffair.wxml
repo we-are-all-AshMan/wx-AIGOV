@@ -1,0 +1,222 @@
+<view wx:if="{{active==-1}}" class="active_0">
+    <view class="active0_header">
+        <view class="header_title">
+            电子身份证办理
+        </view>
+        <view class="header_content">
+            <view class="content_title">
+                办事方：
+            </view>
+            <view class="content">
+                AIGOV智能政务平台
+            </view>
+        </view>
+        <view class="header_content">
+            <view class="content_title">
+                办理形式：
+            </view>
+            <view class="content">
+                线上办理或线下办理
+            </view>
+        </view>
+        <view class="header_content">
+            <view class="content_title">
+                是否收费：
+            </view>
+            <view class="content">
+                否
+            </view>
+        </view>
+        <view class="header_content">
+            <view class="content_title">
+                承诺办结时限：
+            </view>
+            <view class="content">
+                1个工作日
+            </view>
+        </view>
+
+        <view class="header_content">
+            <view class="content_title">
+                到办事现场次数：
+            </view>
+            <view class="content">
+                小于等于1次
+            </view>
+        </view>
+
+    </view>
+    <view class="active0_content">
+            <van-steps
+            steps="{{ steps }}"
+            active="{{ active }}"
+            direction="vertical"
+            active-color="#ee0a24"
+            bind:click-step="handleClickstrp"
+          
+            />
+    </view>
+
+        <van-popup
+        show="{{ isclickstep }}"
+        position="bottom"
+        custom-style="height: 20%;"
+        bind:close="onClose"
+        bind:click-overlay="onClose"
+        closeable="{{true}}"
+        >
+        <view wx:if="{{currentClickedstep==0}}">
+        需要上传身份证正面照片
+        </view>
+        <view wx:if="{{currentClickedstep==1}}">
+            需要进行人脸识别
+        </view>
+        <view wx:if="{{currentClickedstep==2}}">
+            承诺将在一个工作日内审核完毕
+        </view>
+        <view wx:if="{{currentClickedstep==2}}">
+            审核完毕，可以使用
+        </view>
+        </van-popup>
+
+    <view class="active0_footer">
+        <view class="toquestion">
+            <image src="../../icos/kefu1.png" mode="widthFix" >
+            
+            </image>
+            <view class="minifont">
+            在线咨询
+            </view>
+        </view>
+        <view class="toquestion">
+            <image src="../../icos/shoucang.png" mode="widthFix" >
+            
+            </image>
+            <view style="margin-left: 18rpx;" class="minifont">
+            收藏
+            </view>
+        </view>
+        <view class="yuyue">
+            <button plain type="primary">预约</button>
+        </view>
+        <view class="newstep">
+            <button plain type="primary" bindtap="start">在线申请</button>
+        </view>
+    </view>
+    <van-dialog id="van-dialog" />
+
+</view>
+<view wx:if="{{active==0}}" class="active_1">
+    <van-cell-group>
+        <van-field
+        required
+        clearable
+        value="{{ name }}"
+        label="姓名"
+        placeholder="请输入姓名"
+        border="{{ true }}"
+        icon="question-o"
+        bind:click-icon="onClickIcon"
+        bind:change="onChange"
+        />
+        <van-field
+        required
+        clearable
+        value="{{ address }}"
+        label="住址"
+        placeholder="请输入住址"
+        border="{{ true }}"
+        icon="question-o"
+        bind:click-icon="onClickIcon"
+        bind:change="onChange"
+        />
+        <van-field
+        required
+        clearable
+        value="{{ Id }}"
+        label="身份证号"
+        placeholder="请输入身份证号"
+        border="{{ true }}"
+        icon="question-o"
+        bind:click-icon="onClickIcon"
+        bind:change="onChange"
+        />
+        <!-- <van-field
+        required
+        clearable
+        value="{{ tele }}"
+        label="手机号"
+        placeholder="请输入手机号"
+        border="{{ true }}"
+        icon="question-o"
+        bind:click-icon="onClickIcon"
+        bind:change="onChange"
+        /> -->
+        <van-field
+        value="{{ sms }}"
+        center
+        clearable
+        label="短信验证码"
+        placeholder="请输入短信验证码"
+        border="{{ false }}"
+        use-button-slot
+        >
+
+        <button wx:if="{{isSending}}"
+        slot="button" class="smallButton" type="primary"
+        bindtap="handleClickSendsms"  disabled
+        >验证码已发送</button>
+        <button wx:else
+        slot="button" class="smallButton" type="primary"
+        bindtap="handleClickSendsms"  
+        >发送验证码</button>
+
+        </van-field>
+      </van-cell-group>
+
+      <view class="uploadImg" bindtap='chooseImage'>
+
+        <view wx:if="{{!uploaded}}">
+        <text>+</text> 
+        <text>点击上传身份证</text>
+        </view>
+            <image wx:else  mode="heightFix" src="{{attendSuccessImg1}}"></image>
+        </view>
+
+      <button type="primary" class="disabled" bindtap="active1Tap">提交</button>
+      <i-toast id="toast" />
+</view>
+<view wx:if="{{active==1}}" class="active_2">
+    <camera device-position="front" 
+    style="width:100%; height: {{wh}}px;" 
+        wx:if="{{src === ''}}" >
+        <cover-view class='btns-box'>    
+        <cover-image src='https://yanxuan.nosdn.127.net/8c83302c03a5ee7bf123d8b8c90592d6.png' bindtap="takePhotoMySelf"></cover-image>    
+        </cover-view>
+    </camera>
+    <view wx:else>  
+        <image src='{{src}}' style='height: {{wh}}px; width: 100%; display: block;' 
+        mode='aspectFit'></image> 
+        <view class="hhh"> 
+        <button type='primary' bindtap='active2Tap'>上传</button>
+        <button type='warn' bindtap='reChoose'>重拍</button>
+        </view>
+    
+    </view>
+
+</view>
+<view wx:if="{{active==2}}" class="active_3">
+    <view class="spin-article">
+        <van-loading color="#1989fa" size="200px" ></van-loading>
+            <text class="tip_content">
+            正在办理，请稍后
+            </text>
+    </view>
+</view>
+<view wx:if="{{active==3}}" class="active_4">
+
+    
+</view>
+<view class="footer" wx:if="{{active!=-1}}">
+<van-steps steps="{{ steps }}" active="{{ active }}" />
+</view>

@@ -104,6 +104,119 @@
 					"id": -1,
 					"name": "用户",
 					"pathName": "pages/User/User",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "互动",
+					"pathName": "pages/Interact/Interact",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "折线图",
+					"pathName": "pages/charts/line/line",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "测试",
+					"pathName": "pages/Test/Test",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "饼状图",
+					"pathName": "pages/charts/pie/pie",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 10,
+					"name": "事务办理",
+					"pathName": "pages/HandleAffair/HandleAffair",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "柱状图",
+					"pathName": "pages/charts/column/column",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "绑定电话",
+					"pathName": "pages/Telephone/Telephone",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "ETC",
+					"pathName": "pages/ETC/ETC",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "ETC1",
+					"pathName": "pages/ETC1/ETC1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "ETCquery",
+					"pathName": "pages/ETCquery/ETCquery",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "社保卡激活",
+					"pathName": "pages/Shebao/Shebao",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Shebao2",
+					"pathName": "pages/Shebao2/Shebao2",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/test1",
+					"pathName": "pages/test1",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "test2",
+					"pathName": "pages/test2/test2",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Shebaoquery",
+					"pathName": "pages/Shebaoquery/Shebaoquery",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "Admaff",
+					"pathName": "pages/Admaff/Admaff",
+					"query": "",
 					"scene": null
 				}
 			]

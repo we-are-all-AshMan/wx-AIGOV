@@ -1,0 +1,68 @@
+.ETC_title {
+  width: 100%;
+}
+.ETC_tips {
+  margin-top: 30rpx;
+  padding: 30rpx;
+  border-top: 2rpx solid #b6b5b5;
+}
+.ETC_tips .tips_title {
+  font-weight: 700;
+}
+.ETC_tips .tips_content {
+  color: #999999;
+  margin-top: 20rpx;
+}
+.footer {
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  height: 120rpx;
+  width: 100%;
+  display: flex;
+  padding: 20rpx;
+}
+.footer .toquestion {
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  font-size: 5pt;
+}
+.footer .toquestion image {
+  width: 60rpx;
+}
+.footer .toquestion .minifont {
+  font-size: 5;
+}
+.footer .newstep {
+  position: fixed;
+  right: 30rpx;
+  height: 100%;
+}
+.footer .newstep button {
+  width: 300rpx;
+  height: 70rpx;
+  margin-bottom: 20rpx;
+  font-size: 10pt;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer .query {
+  margin-right: 30rpx;
+}
+.footer .query button {
+  width: 300rpx;
+  height: 70rpx;
+  margin-bottom: 20rpx;
+  font-size: 10pt;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.placeholder{
+  width: 100%;
+  height: 150rpx;
+}

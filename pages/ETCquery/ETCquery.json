@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-cell": "../../van-dist/cell/index",
+    "van-cell-group": "../../van-dist/cell-group/index",
+    "van-dialog": "../../van-dist/dialog/index",
+    "i-modal": "../../dist/modal/index"
+  }
+}

@@ -75,7 +75,7 @@
 
       <cover-view class="back" bindtap="back1">
 
-        <cover-image src="../../images/back.png"></cover-image>
+        <cover-image src="https://yanxuan.nosdn.127.net/d72d30ee1218334fa647497331ef7429.png"></cover-image>
 
       </cover-view>
 
@@ -93,7 +93,7 @@
 
    <cover-view class="map-prompt">您可拖动地图, 标记您的准确位置</cover-view>
 
-   <cover-image class="current-site-icon" src="../../images/my_marker.png"></cover-image>
+   <cover-image class="current-site-icon" src="https://yanxuan.nosdn.127.net/ef8e341a8794fdf83d24390de2db1806.png"></cover-image>
 
    <cover-view class="reload" bindtap="reload">
 

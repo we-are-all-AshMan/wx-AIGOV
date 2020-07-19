@@ -1,0 +1,68 @@
+
+<image class="ETC_title" src="https://yanxuan.nosdn.127.net/46166d1ee3d6e3c74004c78c56e36b98.jpg" 
+mode="widthFix" 
+lazy-load="false" binderror="" bindload=""> 
+</image>
+
+<van-steps
+  steps="{{ steps }}"
+  active="{{ -1 }}"
+  direction="vertical"
+  bind:click-step="handleClickstep"
+/>
+
+<view class="ETC_tips">
+    <view class="tips_title">
+        温馨提示
+    </view>
+    <view class="tips_content">
+        1.仅支持快车办理
+    </view>
+    <view class="tips_content">
+        2.用户注销时需要将设备寄回
+    </view>
+</view>
+<view class="placeholder"> </view>
+
+<view class="footer">
+    <view class="toquestion">
+        <image src="../../icos/kefu1.png" mode="widthFix" >
+        </image>
+        <view class="minifont">
+        在线咨询
+        </view>
+    </view>
+    <view class="newstep">
+        <button plain type="primary" bindtap="start">在线申请</button>
+    </view>
+    <view class="query">
+        <button plain type="primary" bindtap="query">进度查询</button>
+    </view>
+</view>
+
+
+
+
+
+<van-popup
+show="{{ isclickstep }}"
+position="bottom"
+custom-style="height: 20%;"
+bind:close="onClose"
+bind:click-overlay="onClose"
+closeable="{{true}}"
+>
+<view wx:if="{{currentClickedstep==0}}">
+需要上传身份证正面照片
+</view>
+<view wx:if="{{currentClickedstep==1}}">
+    需要进行人脸识别
+</view>
+<view wx:if="{{currentClickedstep==2}}">
+    承诺将在一个工作日内审核完毕
+</view>
+<view wx:if="{{currentClickedstep==2}}">
+    审核完毕，可以使用
+</view>
+</van-popup>
+<van-dialog id="van-dialog" />

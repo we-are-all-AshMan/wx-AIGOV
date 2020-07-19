@@ -1,2 +1,12 @@
-<!--pages/Admaff/Admaff.wxml-->
-<text>pages/Admaff/Admaff.wxml</text>
+<navigator url="../../pages/HandleAffair/HandleAffair" >
+<i-card title="电子身份证" extra="点击办理" thumb="https://yanxuan.nosdn.127.net/2d22d08201065183e20a6199649ec4a7.png">
+</i-card>
+</navigator>
+<navigator url="../../pages/ETC/ETC" style="margin-top: 20rpx;">
+    <i-card title="ETC办理" extra="点击办理" thumb="https://yanxuan.nosdn.127.net/292e6cebb1b5faaab4c9ebe1b5b88c7c.png">
+    </i-card>
+</navigator>
+<navigator url="../../pages/Shebao/Shebao" style="margin-top: 20rpx;">
+    <i-card title="社保卡激活" extra="点击办理" thumb="https://yanxuan.nosdn.127.net/7495650bd0643232384eb1ed7bea07c4.png">
+    </i-card>
+</navigator>

@@ -1,0 +1,22 @@
+  <van-cell-group>
+    <van-cell title="{{item.car}}" value="{{item.state==1?'正在办理中···':'已审核完毕'}}" 
+    wx:for="{{list}}" icon="{{item.state=='1'?'arrow':'success'}}"
+    wx:key="car"
+    bindtap="handleOpenDetail"
+    data-index="{{index}}"
+    >
+</van-cell>
+
+    <!-- link-type="navigateTo"
+    url="/pages/dashboard/index"/> -->
+
+  </van-cell-group>
+  <i-modal title="详细信息" visible="{{ visible1 }}" bind:ok="handleClose1" bind:cancel="handleClose1">
+    <view>车牌号：{{NowClickOb.car}}</view>
+    <view>车主名：{{NowClickOb.host}}</view>
+    <view>所在省份：{{NowClickOb.province}}</view>
+    <view>所在城市：{{NowClickOb.city}}</view>
+    <view>电话：{{NowClickOb.tel}}</view>
+    <view>接收人：{{NowClickOb.consignee}}</view>
+ 
+</i-modal>

@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-steps": "../../van-dist/steps/index",
+    "van-popup": "../../van-dist/popup/index",
+    "van-dialog": "../../van-dist/dialog/index"
+
+  }
+}

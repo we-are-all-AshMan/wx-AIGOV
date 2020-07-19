@@ -1,0 +1,14 @@
+{
+  "usingComponents": {
+    "van-popup": "../../van-dist/popup/index",
+    "van-steps": "../../van-dist/steps/index",
+    "van-field": "../../van-dist/field/index",
+    "van-cell-group": "../../van-dist/cell-group/index",
+    "van-button": "../../van-dist/button/index",
+    "i-spin": "../../dist/spin/index",
+    "van-loading": "../../van-dist/loading/index",
+    "van-area": "../../van-dist/area/index",
+    "i-toast": "../../dist/toast/index",
+    "van-dialog": "../../van-dist/dialog/index"
+  }
+}

@@ -1,0 +1,76 @@
+<view class="carId_picker">
+    <view class="carId_title">车牌号码:
+    </view>
+    <picker bindchange="bindPickerChange" 
+    value="{{index1}}" range="{{array1}}"
+    class="picker1">
+        <view class="picker">
+         {{array1[index1]}}
+        </view>
+      </picker>
+      <picker bindchange="bindPickerChange" 
+      value="{{index2}}" range="{{array2}}"
+      class="picker2">
+          <view class="picker">
+          {{array2[index2]}}
+          </view>
+        </picker>
+      <input type="text" value="{{carId}}"
+      placeholder="请输入车牌数字部分"
+      bindinput="updateCarIdValue"
+      />
+</view>
+
+<view class="user_name">
+  <view class="userName_title">车主姓名
+  </view>
+  <input type="text" value="{{carName}}"
+  placeholder="请输入车主姓名"
+  bindinput="updateCarNameValue"
+  />
+</view>
+<view class="user_name">
+  <view class="userName_title">收货人名 
+  </view>
+  <input type="text" value="{{recevieName}}"
+  placeholder="请输入收货者姓名"
+  bindinput="updateRecevieNameValue"
+  />
+</view>
+<view class="user_name">
+  <view class="userName_title">手机号码
+  </view>
+  <input type="text" value="{{telephone}}"
+  placeholder="请输入手机号"
+  bindinput="updateTeleValue"
+  />
+</view>
+
+<view class="carId_picker">
+    <view class="carId_title">城市地区:
+  </view>
+    <picker mode="region" 
+    bindchange="bindRegionChange" 
+    value="{{region}}" 
+    custom-item="{{customItem}}"
+    class="region_Picker"
+    >
+    <view class="picker">
+     {{region[0]}}，{{region[1]}}，{{region[2]}}
+    </view>
+  </picker>
+</view>
+
+
+  <view class="user_name">
+    <view class="userName_title">详细地址
+    </view>
+    <input type="text" value="{{address}}"
+    placeholder="请输入详细地址"
+    bindinput="updatAddressValue"
+    />
+  </view>
+
+  <button bindtap="handlePostETC">继续</button>
+  <i-toast id="toast" />
+  <van-dialog id="van-dialog" />

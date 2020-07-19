@@ -113,7 +113,36 @@
             desc="{{foreignIfo.seriousCount}}" 
             status="{{foreignIfo.seriousIncr>0?'↑'+foreignIfo.seriousIncr:'↓'+foreignIfo.seriousIncr}}">
             </van-panel> -->
-        </view>
+             </view>
+        <!-- 第五栏内容 -->
+            <view hidden="{{currentIndex!=4}}"
+            class="news">
+                <!-- <canvas
+                    style="width: 500rpx; height: 500px;"
+                    canvas-id="yueEle"
+                    binderror="canvasIdErrorCallback"></canvas> -->
+                    <!-- <view class="canvas-view">
+                        <canvas class="canvas" canvas-id="canvasId"></canvas>
+                    </view> -->
+                    <view class="tozhe">
+                    <image src="../../icos/zhexiantu.png" mode="widthFix"></image>
+                    <view bindtap="gotoPage" data-page="line" class="list-item">
+                        确诊病例人数变化
+                    </view>
+                    </view>
+                    <view class="tozhu"> 
+                    <image src="../../icos/zhu.png" mode="widthFix"></image>
+                    <view bindtap="gotoPage" data-page="column" class="list-item">
+
+                    </view>
+                    </view>
+                    <view class="tobing">
+                    <image src="../../icos/bing.png" mode="widthFix"></image>
+                    <view bindtap="gotoPage" data-page="pie" class="list-item">
+                        全球确诊分布
+                    </view>
+                  </view>
+            </view>
         </scroll-view>
     </view>
 </view>

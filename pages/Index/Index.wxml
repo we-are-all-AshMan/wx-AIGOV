@@ -5,7 +5,7 @@
         icon="../../icos/zhengce2.png" 
         text="政务办理" 
         link-type="navigateTo"
-        url=""
+        url="../../pages/Admaff/Admaff"
         />
         <van-grid-item 
         icon="../../icos/peizhitubiaosvg-.png" 
@@ -43,14 +43,14 @@
     <view class="region">
      <van-grid column-num="2" border="true" >
         <van-grid-item use-slot>
-            <image  mode="widthFix" src="../../gaokaozhuanqu.jpg" />
+            <image  mode="widthFix" src="https://yanxuan.nosdn.127.net/c21ebd1e18ff52faf5ca6a5875d1df1c.jpg" />
             <text>高考专区</text>
             提供高考服务
         </van-grid-item>
         <van-grid-item use-slot>
-            <image mode="widthFix" src="../../shebaofuwu.png" />
-               <text>高考专区</text>
-            提供高考服务
+            <image mode="widthFix" src="https://yanxuan.nosdn.127.net/2c05cf6211338cfa46dc6649b646aabe.png" />
+               <text>社保专区</text>
+            提供社保认证、办理
         </van-grid-item>
     </van-grid>
     </view> 

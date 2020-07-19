@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "van-field": "../../van-dist/field/index",
+    "van-cell-group": "../../van-dist/cell-group/index",
+    "i-toast": "../../dist/toast/index",
+    "van-dialog": "../../van-dist/dialog/index"
+  }
+}

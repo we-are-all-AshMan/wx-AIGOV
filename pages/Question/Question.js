@@ -1,4 +1,4 @@
-// pages/Question.js
+import {getRequest} from "../../request/request.js";
 Page({
 
   /**
@@ -11,22 +11,78 @@ Page({
     //提示语
     tips:'您好，欢迎使用智能客服，请问您有什么需要帮助的？\n\n       热门问题：',
     //热门问题
-    hottopics:['食品经营许可，申请餐饮服务，住所和经营场所可以不一样吗\n',
-              '食品经营许可，申请餐饮服务，住所和经营场所可以不一样吗\n',
-              '食品经营许可，申请餐饮服务，住所和经营场所可以不一样吗\n',
+    hottopics:['食品经营许可，申请餐饮服务，住所和经营场所可以不一样吗？\n',
+              '考证的时候使用的是一代身份证号码，想申请变更为现在的二代身份证号码可以吗？\n',
+              '办理护士执业注册时的健康体检证明需要哪些医疗机构出具？\n',
              ],
-    content:['这场抗击新冠肺炎疫情的严峻斗争，让你们这届高校毕业生经受了磨练、收获了成长，也使你们切身体会到了‘志不求易者成，事不避难者进’的道理。前进的道路从不会一帆风顺，实现中华民族伟大复兴的中国梦需要一代一代青年矢志奋斗。”'
-            ,'7月7日，习近平总书记给中国石油大学（北京）克拉玛依校区毕业生回信，肯定他们到边疆基层工作的选择，对广大高校毕业生提出殷切期望。']
-  },
+    content:[],
+    //根据已输入内容做出的提示内容
+    predictContent:[]
+          },
   bindKeyInput: function (e) {
     this.setData({
       inputValue: e.detail.value
     })
+    
+    console.log(this.data.inputValue);
+    this.getPredict(this.data.inputValue);
+  },
+  handleTapinput(e){
+    console.log("惦记我");
+    console.log(this.data.istyping);
+    this.setData(
+      {
+        istyping:true
+      }
+    )
+  },
+  handleTapPredict(e)
+  {
+    // console.log(e.currentTarget.dataset.index);
+    let index = e.currentTarget.dataset.index;
+    // console.log(this.data.predictContent[index]);
+    let text = this.data.predictContent[index];
+    this.setData({
+      inputValue:text,
+      istyping:false
+    });
     console.log(this.data.inputValue);
   },
   handleTapHottopic(e)
   {
     console.log(e.target.dataset);
+  },
+  //点击发送按钮
+  submitQuestion()
+  {
+    this.getAnswer(this.data.inputValue);
+    this.setData({
+      inputValue:"",
+      predictContent:null
+    })
+  },
+  //获取答案
+  async getAnswer(question){
+    const res = await getRequest(
+      {
+        url:"http://47.107.110.112:8004/chattingRobot/"+question
+      }
+      );
+      console.log(res.data.message);
+      var abc = this.data.content;
+      abc.push(res.data.message);
+      this.setData({
+        content:abc
+      })
+        },
+  async getPredict(inputContent)
+  {
+    const res = await getRequest(
+      {
+        url:"http://47.107.110.112:8004/chattingRobot/predict/"+inputContent
+      }
+      );
+    this.setData({predictContent:res.data.questionList});
   },
   /**
    * 生命周期函数--监听页面加载

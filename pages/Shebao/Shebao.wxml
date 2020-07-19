@@ -1,0 +1,52 @@
+<view class="title">
+    <view class="shebao_title">
+        社保卡激活
+        <view class="shebao_subtitle">
+            适用范围：已办理身份证的公民
+        </view>
+        <view class="shebao_subtitle">
+            远程办理，协同处理
+        </view>
+    </view>
+ 
+    <image class="shebaoimage" src="https://yanxuan.nosdn.127.net/b81194aa9b77de8e84f0a3e460beac11.png" 
+    mode="widthFix" lazy-load="false" >
+    </image>
+</view>
+
+<van-steps
+  steps="{{ steps }}"
+  active="{{ -1 }}"
+  direction="vertical"
+  bind:click-step="handleClickstep"
+/>
+
+
+<view class="ETC_tips">
+    <view class="tips_title">
+        温馨提示
+    </view>
+    <view class="tips_content">
+        1.仅支持快车办理
+    </view>
+    <view class="tips_content">
+        2.用户注销时需要将设备寄回
+    </view>
+</view>
+<view class="placeholder"> </view>
+
+<view class="footer">
+    <view class="toquestion">
+        <image src="../../icos/kefu1.png" mode="widthFix" >
+        </image>
+        <view class="minifont">
+        在线咨询
+        </view>
+    </view>
+    <view class="newstep">
+        <button plain type="primary" bindtap="start">在线申请</button>
+    </view>
+    <view class="query">
+        <button plain type="primary" bindtap="query">进度查询</button>
+    </view>
+</view>

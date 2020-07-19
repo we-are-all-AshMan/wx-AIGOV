@@ -1,0 +1,124 @@
+.placeholder {
+  width: 100%;
+  height: 350px;
+}
+.active0_header .header_title {
+  font-size: 15pt;
+  font-weight: 900;
+  margin-top: 20rpx;
+  margin-left: 20rpx;
+  margin-bottom: 20rpx;
+}
+.active0_header .header_content {
+  display: flex;
+  margin-left: 15rpx;
+  margin-bottom: 10rpx;
+}
+.active0_header .header_content .content_title {
+  font-weight: 700;
+}
+.active0_footer {
+  position: fixed;
+  bottom: 0;
+  height: 120rpx;
+  width: 100%;
+  display: flex;
+  padding: 20rpx;
+}
+.active0_footer .toquestion {
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  font-size: 5pt;
+}
+.active0_footer .toquestion image {
+  width: 60rpx;
+}
+.active0_footer .toquestion .minifont {
+  font-size: 5;
+}
+.active0_footer .yuyue {
+  position: fixed;
+  right: 370rpx;
+  height: 100%;
+}
+.active0_footer .yuyue button {
+  width: 160rpx;
+  height: 70rpx;
+  margin-bottom: 20rpx;
+  font-size: 10pt;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.active0_footer .newstep {
+  position: fixed;
+  right: 30rpx;
+  height: 100%;
+}
+.active0_footer .newstep button {
+  width: 300rpx;
+  height: 70rpx;
+  margin-bottom: 20rpx;
+  font-size: 10pt;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer {
+  position: fixed;
+  bottom: 0px;
+  right: 0;
+  left: 0;
+}
+.uploadImg {
+  width: 100%;
+  height: 400rpx;
+  background-color: #ecebeb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50rpx;
+}
+.uploadImg text {
+  font-size: 50rpx;
+}
+.uploadImg image {
+  height: 100%;
+  width: 100%;
+}
+.active_2 .btns-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: absolute;
+  bottom: 50rpx;
+  width: 100%;
+  z-index: 100;
+}
+.active_2 .btns-box cover-image {
+  width: 150rpx;
+  height: 150rpx;
+}
+.hhh {
+  display: flex;
+}
+.tips {
+  font-size: large;
+}
+.spin-article {
+  margin-top: 40rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.spin-article .tip_content {
+  font-size: 60rpx;
+  color: #a8e9f1;
+}
+.smallButton {
+  width: 100rpx;
+}

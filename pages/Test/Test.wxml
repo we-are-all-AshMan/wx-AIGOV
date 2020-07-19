@@ -1,0 +1,18 @@
+<view bindtap='chooseImage'>选择图片</view>
+<canvas canvas-id="attendCanvasId" mode="widthFix" style="width:300px;height:300px;position: absolute;left:-300px;top:-300px"></canvas>
+<image src="{{attendSuccessImg1}}"></image>
+<image src="{{attendSuccessImg2}}"></image>
+
+<camera style="width:100%; height: {{wh}}px;" wx:if="{{src === ''}}">  
+  <cover-view class='btns-box'>    
+  <cover-image src='/images/album.png'></cover-image>    
+  <button bindtap="takePhotoMySelf" style="primary"> </button>>
+  <cover-image src='/images/camera.png' bindtap="takePhotoMySelf"></cover-image>    
+  <cover-image src='/images/reverse.png'></cover-image>  
+  </cover-view>
+  </camera>
+  ​
+  <!-- <view wx:else>   -->
+  <!-- <image src='{{src}}' style="height: {{wh}}px; width: 100%; display: block;"> -->
+  <!-- </image>   -->
+  <!-- <button type='warn'>重拍</button></view> -->

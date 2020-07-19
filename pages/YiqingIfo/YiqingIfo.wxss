@@ -35,7 +35,44 @@ page {
 }
 .news_category .cates .right_content .news {
   margin-bottom: 10rpx;
+  margin-left: 10rpx;
 }
 .news_category .cates .right_content .news .blod_font {
   font-weight: 700;
+}
+.news_category .cates .right_content .tozhe {
+  display: flex;
+  margin-top: 20rpx;
+}
+.news_category .cates .right_content .tozhe image {
+  width: 100rpx;
+}
+.news_category .cates .right_content .tozhe .list-item {
+  margin-left: 20rpx;
+  display: flex;
+  align-items: center;
+}
+.news_category .cates .right_content .tozhu {
+  margin-top: 20rpx;
+  display: flex;
+}
+.news_category .cates .right_content .tozhu image {
+  width: 80rpx;
+}
+.news_category .cates .right_content .tozhu .list-item {
+  margin-left: 30rpx;
+  display: flex;
+  align-items: center;
+}
+.news_category .cates .right_content .tobing {
+  margin-top: 20rpx;
+  display: flex;
+}
+.news_category .cates .right_content .tobing image {
+  width: 100rpx;
+}
+.news_category .cates .right_content .tobing .list-item {
+  margin-left: 20rpx;
+  display: flex;
+  align-items: center;
 }

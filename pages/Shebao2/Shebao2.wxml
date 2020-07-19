@@ -1,0 +1,32 @@
+<view class="shebao2_title">
+    <view class="title">社保卡激活
+        <view class="subtitle">
+            适用范围：已办理身份证的公民
+        </view>
+        <view class="subtitle">
+            远程办理，协同处理
+        </view>
+    </view>
+    <image class="" src="https://picturebed-1301866798.cos.ap-chengdu.myqcloud.com/shebao2.gif" 
+    mode="widthFix" lazy-load="false">
+    </image>
+</view>
+
+<view class="content">
+    <view class="little_title">
+        姓名
+    </view>
+    <input type="text" placeholder="请输入姓名" value="{{name}}"  bindinput="updateNameValue"/>
+    <view class="little_title">
+        社会保障号码
+    </view>
+    <input type="text" placeholder="请输入身份证号" value="{{socialSecurityNumber}}"  bindinput="updatesocialSecurityNumberValue"/>
+    <view class="little_title">
+        社保卡号
+    </view>
+    <input type="text" placeholder="请输入社保卡号" value="{{socialSecurityCardNumber}}"  bindinput="updatesocialSecurityCardNumberValue"/>
+</view>
+
+<button class="userButton" bindtap="startUse">
+    立即启用
+</button>

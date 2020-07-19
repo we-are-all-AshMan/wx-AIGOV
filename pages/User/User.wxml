@@ -22,6 +22,11 @@
                 关于我们
             </view>
             </navigator>
+            <navigator url="/pages/Telephone/Telephone">
+                <view class="item">
+                    绑定电话
+                </view>
+            </navigator>
             <button class="item btn" open-type="share">把应用程序推荐给其他人</button>
         </view>
 </view>

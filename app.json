@@ -8,11 +8,25 @@
     "pages/Admaff/Admaff",
     "pages/ConService/ConService",
     "pages/Location/Location",
-    "pages/out/out"
+    "pages/out/out",
+    "pages/Interact/Interact",
+    "pages/charts/line/line",
+    "pages/charts/column/column",
+    "pages/charts/pie/pie",
+    "pages/Test/Test",
+    "pages/HandleAffair/HandleAffair",
+    "pages/Telephone/Telephone",
+    "pages/ETC/ETC",
+    "pages/ETC1/ETC1",
+    "pages/ETCstate/ETCstate",
+    "pages/ETCquery/ETCquery",
+    "pages/Shebao/Shebao",
+    "pages/Shebao2/Shebao2",
+    "pages/Shebaoquery/Shebaoquery"
   ],
   "window": {
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#55b7f8",
     "navigationBarTitleText": "AIGOV",
     "navigationBarTextStyle": "black"
   },
@@ -27,8 +41,8 @@
         "selectedIconPath": "icos/shouye1.png"
       },
       {
-        "pagePath": "pages/YiqingIfo/YiqingIfo",
-        "text": "疫情",
+        "pagePath":"pages/Interact/Interact",
+        "text": "事务中心",
         "iconPath": "icos/xinwen.png",
         "selectedIconPath": "icos/xinwen1.png"
       },

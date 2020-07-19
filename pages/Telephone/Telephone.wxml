@@ -1,0 +1,49 @@
+<view class="main_content">
+    <view wx:if="{{isbinded}}">
+        <van-field
+        value="{{ phone }}"
+        label="手机号"
+        clearable
+        border="{{ true }}"
+        use-button-slot
+        bindinput="phoneContact"
+        disabled
+        />
+        <button bindtap="resetBindPhone"> 重新绑定 </button>
+    </view>
+    <view wx:else>
+    <van-cell-group>
+        <van-field
+        value="{{ phone }}"
+        label="手机号"
+        placeholder="请输入手机号"
+        clearable
+        border="{{ true }}"
+        use-button-slot
+        bindinput="phoneContact"
+        >
+        <button wx:if="{{isSending}}"
+        slot="button" class="smallButton" type="primary"
+        bindtap="handleClick"  disabled
+        >验证码已发送</button>
+        <button wx:else
+        slot="button" class="smallButton" type="primary"
+        bindtap="handleClick"  
+        >发送验证码</button>
+        </van-field>
+        <van-field
+        value="{{ sms }}"
+        center
+        clearable
+        label="短信验证码"
+        placeholder="请输入短信验证码"
+        border="{{ true }}"
+        bindinput="smsContact"
+        >
+        </van-field>
+        <button bindtap="bindPhone"> 绑定 </button>
+    </van-cell-group>
+    </view> 
+    <i-toast id="toast" />
+    <van-dialog id="van-dialog" />
+</view>

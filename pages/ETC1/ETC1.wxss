@@ -1,0 +1,52 @@
+.carId_picker {
+  display: flex;
+  align-items: center;
+  padding-bottom: 8rpx;
+  margin-bottom: 30rpx;
+  margin-top: 20rpx;
+}
+.carId_picker .carId_title {
+  margin-left: 20rpx;
+  font-weight: 700;
+  margin-right: 30rpx;
+}
+.carId_picker .picker1 {
+  margin-left: 20rpx;
+  border: 2rpx solid #c0bebe;
+  padding: 10rpx;
+  color: #7aa3f0;
+}
+.carId_picker .picker2 {
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  border: 2rpx solid #c0bebe;
+  padding: 10rpx;
+  color: #497406;
+}
+.carId_picker input {
+  width: 50%;
+  text-align: right;
+}
+.carId_picker .region_Picker {
+  position: fixed;
+  right: 30rpx;
+  display: flex;
+}
+.carId_picker .region_Picker .picker {
+  text-align: right;
+}
+.user_name {
+  display: flex;
+  align-items: center;
+  padding-bottom: 8rpx;
+  margin-bottom: 30rpx;
+}
+.user_name .userName_title {
+  font-weight: 700;
+  margin-right: 30rpx;
+  margin-left: 20rpx;
+}
+.user_name input {
+  width: 70%;
+  text-align: right;
+}

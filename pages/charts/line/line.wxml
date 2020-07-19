@@ -1,0 +1,5 @@
+<view class="container">
+    <canvas canvas-id="lineCanvas" disable-scroll="false"  bindtouchstart="touchHandler" style="width: 100%; height:500rpx"></canvas>
+    <button type="primary" bindtap="updateData"
+    >更新数据</button>
+</view>

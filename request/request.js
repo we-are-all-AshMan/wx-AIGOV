@@ -1,3 +1,4 @@
+//因为后端服务器地址的变化 所以所有url都需要写全称
 
 //同时发送异步代码的次数
 let ajaxTimes = 0;
@@ -13,7 +14,7 @@ export function getRequest(params){
       })
 
     //定义公共部分 url 则在传递参数时就不必要将公共部分也传进来了 在下面拼接就好了
-    const baseUrl = "http://175.24.57.96:88/consumer"
+    // const baseUrl = "http://175.24.57.96:88/consumer"
     //将传过来的参数结构出来
     return new Promise((resolve,reject)=>{
         // 发起请求          
@@ -21,7 +22,7 @@ export function getRequest(params){
             //...params是解构params参数
             //就是传入的数据 一个对象{}
             ...params,
-            url:baseUrl + params.url,
+            url:params.url,
             data:params.data,
             success:(res)=>{
                 //成功的回调
@@ -61,7 +62,7 @@ export function postRequst(params){
             //...params是解构params参数
             //就是传入的数据 一个对象{}
             ...params,
-            url:baseUrl + params.url,
+            url:params.url,
             data:params.data,
             method:"POST",
             success:(res)=>{
