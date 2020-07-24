@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "van-progress": "../../van-dist/progress/index"
+  }
+  
+}

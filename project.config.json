@@ -3,10 +3,12 @@
 	"packOptions": {
 		"ignore": []
 	},
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
 	"setting": {
 		"urlCheck": false,
 		"es6": true,
-		"enhance": false,
+		"enhance": true,
 		"postcss": true,
 		"preloadBackgroundData": false,
 		"minified": true,
@@ -139,7 +141,7 @@
 					"id": 10,
 					"name": "事务办理",
 					"pathName": "pages/HandleAffair/HandleAffair",
-					"query": "",
+					"query": "active=3",
 					"scene": null
 				},
 				{
@@ -217,6 +219,103 @@
 					"name": "Admaff",
 					"pathName": "pages/Admaff/Admaff",
 					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "会议",
+					"pathName": "pages/Meeting/Meeting",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "会议记录",
+					"pathName": "pages/MeetingRecord/MeetingRecord",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "政策",
+					"pathName": "pages/zhengce/zhengce",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "新闻热搜",
+					"pathName": "pages/News/News",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "新闻详情",
+					"pathName": "pages/NewsDetail/NewsDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "天气",
+					"pathName": "pages/Weather/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "政策详情",
+					"pathName": "pages/zhengceDetail/zhengceDetail",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "疫情",
+					"pathName": "pages/home/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "面板",
+					"pathName": "pages/self/self",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "预约护照办理",
+					"pathName": "pages/HuzhaoYuyue/HuzhaoYuyue",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "我的预约",
+					"pathName": "pages/yuyueRecord/yuyueRecord",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "热门新闻",
+					"pathName": "pages/HotNews/HotNews",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/MyAffair/MyAffair",
+					"pathName": "pages/MyAffair/MyAffair",
+					"query": "active=3",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/HotComment/HotComment",
+					"pathName": "pages/HotComment/HotComment",
 					"scene": null
 				}
 			]

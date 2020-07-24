@@ -1,0 +1,61 @@
+.orther_source .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30rpx;
+  font-weight: 700;
+  font-size: 30rpx;
+}
+.orther_source .sub_title {
+  margin: 20rpx 20rpx;
+  border: 1rpx solid black;
+  display: flex;
+  font-size: 20rpx;
+}
+.orther_source .sub_title .column_1 {
+  margin-top: 30rpx;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50rpx;
+  width: 325rpx;
+}
+.orther_source .sub_title .column_1 .row_1 {
+  margin-bottom: 30rpx;
+}
+.orther_source .sub_title .colunm_2 {
+  width: 325rpx;
+  display: flex;
+  flex-direction: column;
+  margin-left: 50rpx;
+}
+.bold {
+  font-weight: 500;
+}
+.xinhuashe {
+  border-bottom: 1rpx solid gray;
+}
+.xinhuashe .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30rpx;
+  font-weight: 700;
+  font-size: 30rpx;
+}
+.xinhuashe .subtitle {
+  display: flex;
+  margin-bottom: 20rpx;
+}
+.xinhuashe .subtitle .resource {
+  margin-left: 50rpx;
+}
+.xinhuashe .subtitle .date {
+  margin-left: 50rpx;
+}
+.content {
+  padding: 20rpx;
+  width: 100%;
+}
+.content .content_image {
+  width: 100%;
+}

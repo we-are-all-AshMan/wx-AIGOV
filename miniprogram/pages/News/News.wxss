@@ -1,0 +1,13 @@
+.title {
+  display: flex;
+  border-bottom: 2rpx solid teal;
+}
+.title_image {
+  width: 750rpx;
+  height: 100%;
+
+}
+.title .tags {
+  width: 100%;
+  padding: 10rpx;
+}

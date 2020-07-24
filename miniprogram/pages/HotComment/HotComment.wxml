@@ -1,0 +1,25 @@
+<view class="container">
+    <view class="hot_comment">
+        <view class="title">
+        热门评论🔥
+        </view>
+    <van-cell-group>
+        <van-cell wx:for="{{hot_comments}}" wx:key="{{index}}"
+        title="{{item}}" 
+        
+       />
+    </van-cell-group>
+    </view>
+</view>
+
+<view class="container">
+    <view class="common_comment">
+        <view class="title">
+        普通评论
+        </view>
+    <van-cell-group>
+        <van-cell wx:for="{{com_comments}}" wx:key="{{index}}"
+        title="{{item}}"  />
+    </van-cell-group>
+    </view>
+</view>

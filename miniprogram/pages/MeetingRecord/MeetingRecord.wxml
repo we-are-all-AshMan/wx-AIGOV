@@ -1,0 +1,6 @@
+<van-cell-group>
+<van-cell wx:for="{{records}}" wx:key="{{item.title}}"
+title="{{item.title}}" is-link value="内容"   label="{{regularTime}}"
+link-type="navigateTo"
+  url="../../pages/MeetingContent/MeetingContent?title={{item.title}}" />
+  </van-cell-group>

@@ -1,8 +1,3 @@
 {
-    "files.associations": {
-        "*.cjson": "jsonc",
-        "*.wxss": "css",
-        "*.wxs": "javascript",
-        "*.wxml": "html"
-    }
+  "git.ignoreLimitWarning": true
 }

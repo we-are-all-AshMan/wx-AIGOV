@@ -1,6 +1,0 @@
-<view class="container">
-    <canvas canvas-id="pieCanvas" class="canvas" style="height:300px" bindtouchstart="touchHandler"></canvas>
-    <view style=' margin-top: 20rpx;margin-left: 20rpx; margin-right: 20rpx;  background-color: rgb(203, 235, 252); height: 500rpx; font-size: 10pt;'>
-        {{nationIfo}}
-    </view>
-</view>

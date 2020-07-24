@@ -1,0 +1,73 @@
+.content_title {
+  display: flex;
+  border-bottom: 1rpx solid gray;
+}
+.content_title .content_image {
+  width: 200rpx;
+}
+.content_title .title {
+  margin-left: 80rpx;
+  margin-top: 80rpx;
+  font-weight: 700;
+  font-size: 40rpx;
+}
+.content_main {
+  padding: 30rpx;
+  width: 100%;
+  height: 900rpx;
+  background: #dbdbdb;
+}
+.content_main .main {
+  width: 100%;
+  height: 100%;
+  background: white;
+}
+.Content_footer {
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  height: 120rpx;
+  width: 100%;
+  display: flex;
+  padding: 20rpx;
+}
+.Content_footer .toquestion {
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  font-size: 5pt;
+}
+.Content_footer .toquestion image {
+  width: 60rpx;
+}
+.Content_footer .toquestion .minifont {
+  font-size: 5;
+}
+.Content_footer .newstep {
+  position: fixed;
+  right: 30rpx;
+  height: 100%;
+}
+.Content_footer .newstep button {
+  width: 300rpx;
+  height: 70rpx;
+  margin-bottom: 20rpx;
+  font-size: 10pt;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Content_footer .query {
+  margin-right: 30rpx;
+}
+.Content_footer .query button {
+  width: 300rpx;
+  height: 70rpx;
+  margin-bottom: 20rpx;
+  font-size: 10pt;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

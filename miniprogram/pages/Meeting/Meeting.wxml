@@ -1,0 +1,50 @@
+
+<view class="meeting_title">
+    <image class="title_image" src="https://s1.ax1x.com/2020/07/20/UhkySx.png" 
+    mode="widthFix" lazy-load="false" >
+    </image>
+    <textarea class="title" value="{{title}}" 
+    bindinput="handleTitleInput">
+    </textarea>
+</view>
+
+
+<view class="container">
+    <image class="bakcground_image" src="https://s1.ax1x.com/2020/07/20/UhejWd.png" 
+    mode="widthFix" lazy-load="false" >
+    </image>
+    <textarea class="content" value="{{content}}"
+    bindinput="handleContentInput">
+    </textarea>
+</view>
+
+
+<image class="recording_image" hidden="{{!isRecording}}"
+src="https://s1.ax1x.com/2020/07/20/UfXMdK.gif" 
+mode="widthFix" 
+lazy-load="false" >
+    
+</image>
+
+
+<image class="save_image" hidden="{{isRecording}}"
+src="https://yanxuan.nosdn.127.net/41c8832c519911095abe5c7eef6cd651.png"
+ mode="widthFix"  style="width:20%"
+lazy-load="false" 
+bindtap="handleSave"> 
+</image>
+
+<view class="footer">
+    <button class="start" bindtap="record">
+        <image class="kf_image" mode="widthFix" hidden="{{isRecording}}"
+        src="https://s1.ax1x.com/2020/07/20/UfXBFS.png">
+        </image>
+        <image class="kf_image" mode="widthFix" hidden="{{!isRecording}}"
+        src="https://s1.ax1x.com/2020/07/20/UfXDJg.png">
+        </image>
+         {{isRecording?'点击停止录音':'点击开始录音'}} 
+    </button>
+    <button class="save" bindtap="checkRecord">
+查看会议记录        
+    </button>
+</view>

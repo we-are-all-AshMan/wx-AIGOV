@@ -1,0 +1,53 @@
+<view class="user_info_wrap">
+    <view class="user_img_wrap">
+        <block wx:if="{{userInfo.nickName}}">
+            <image mode="aspectFill" class="user_bg" src="{{userInfo.avatarUrl}}"/>
+            <view class="user_info">
+                <image class="user_inco" src="{{userInfo.avatarUrl}}"/>
+            <view class="user_name">{{userInfo.nickName}}</view>
+            </view>
+        </block>
+            <button wx:else  open-type="getUserInfo" bindgetuserinfo="handleLogin" 
+            style="color: rgb(37, 60, 80);"
+            >登录</button>
+    </view>
+    <van-grid column-num="3" >
+        <van-grid-item 
+        icon="https://yanxuan.nosdn.127.net/a541306ec001dab8a18714d1a70ebdaa.png" 
+        text="我的预约" 
+        link-type="navigateTo"
+        url="../../pages/yuyueRecord/yuyueRecord"
+        />
+        <van-grid-item 
+         open-type="contact"
+        icon="https://yanxuan.nosdn.127.net/a74efbf877f91b46f638e5af0c994d18.png" 
+        text="意见反馈" 
+        link-type="navigateTo"
+        url=""
+        />     
+        <van-grid-item 
+        icon="https://yanxuan.nosdn.127.net/e53ff70f0ce1c30d51fd1c774f85d72f.png" 
+        text="电话绑定" 
+        link-type="navigateTo"
+        url=""
+        />      
+    </van-grid>
+        <view class="user_conente">
+
+            <button class="item customer" open-type="contact">
+                <text>意见反馈</text>
+                <text>15007273760</text>
+            </button>
+            <navigator url="/pages/TeamIfo/TeamIfo">
+            <view class="item">
+                关于我们
+            </view>
+            </navigator>
+            <navigator url="/pages/Telephone/Telephone">
+                <view class="item">
+                    绑定电话
+                </view>
+            </navigator>
+            <button class="item btn" open-type="share">把应用程序推荐给其他人</button>
+        </view>
+</view>

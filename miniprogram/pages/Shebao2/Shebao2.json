@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-toast": "../../van-dist/toast/index"
+  }
+
+  
+}

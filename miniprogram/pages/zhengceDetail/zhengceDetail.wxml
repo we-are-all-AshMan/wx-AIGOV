@@ -1,0 +1,57 @@
+<view class="xinhuashe" wx:if="{{context.tag=='新华社'}}">
+    <view class="title">
+        {{context.title}}
+    </view>
+    <view class="subtitle">
+        <view class="resource">
+            {{context.tag}}
+        </view>
+        <view class="date">
+            {{context.publishDate}}
+        </view>
+    </view>
+</view>
+
+
+<view class="orther_source" wx:if="{{context.tag!='新华社'}}">
+    <view class="sub_title">
+        <view class="column_1">
+            <view class="row_1">
+                索引号: {{context.indexNumber}}
+            </view>
+            <view class="row_1">
+                发文机关: {{context.issuingAgency}}
+            </view>
+            <view class="row_1">
+                发文字号: {{context.issuingNumber}}
+            </view>
+        </view>
+        <view class="colunm_2">
+            <view class="column_1">
+                <view class="row_1">
+                    主题分类: {{context.tag}}
+                </view>
+                <view class="row_1">
+                    成文时间: {{context.createdDate}}
+                </view>
+                <view class="row_1">
+                    发布日期: {{context.publishDate}}
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="title">
+        {{context.title}}
+    </view>
+</view>
+<view class="content" >
+    <image class="content_image" 
+    src="https://yanxuan.nosdn.127.net/fddf71a8994c865286119c1f625110ef.png" mode="widthFix" 
+    lazy-load="false" binderror="" bindload="">
+        
+    </image>
+    <text class="content_text">
+        {{contexts}}
+
+    </text>
+</view>

@@ -1,0 +1,41 @@
+<view class="header">
+    <view class="title">
+        <image class="title_image" src="https://yanxuan.nosdn.127.net/e0cfef8584c012fa46e45e89fcbf4321.png"
+        mode="widthFix" lazy-load="false" >
+        </image>
+
+        <view class="title_content">
+            {{title}}
+        </view>
+    </view>
+    <view class="subtitle">
+        <view class="date">
+            {{elements.date}}
+        </view>
+        <view class="source">
+            {{elements.media_source}}
+        </view>
+    </view>
+</view>
+
+<view class="content">
+
+        <image style="opacity:{{0.4}}" class="background_image" src="https://yanxuan.nosdn.127.net/4df0d28e0d0ee6f674fa5b9e1caeed3c.jpg" mode="widthFix" lazy-load="false" binderror="" bindload="">
+            
+        </image>
+        <view class="main">
+                    <view class="content_main" wx:for="{{elements.contents}}">
+            <text wx:if="{{item.type=='text'}}"
+            class="{{item.is_string?'bold':''}}"
+            >
+            {{ item.text}}
+            </text>
+    
+            <image wx:if="{{item.type=='img'}}" 
+            class="content_image" src="{{item.img_url}}" mode="widthFix"
+            lazy-load="false" >
+            </image>
+        </view>
+        </view>
+
+</view>

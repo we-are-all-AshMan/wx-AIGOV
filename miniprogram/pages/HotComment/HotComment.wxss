@@ -1,0 +1,23 @@
+Page {
+  background-color: #e7e7e7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+Page .container {
+  background-color: white;
+  width: 80%;
+  height: 100%;
+  margin-bottom: 20rpx;
+}
+Page .container .hot_comment {
+  color: red;
+}
+Page .container .common_comment {
+  color: #86e0fc;
+}
+.title {
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  padding-left: 40rpx;
+}

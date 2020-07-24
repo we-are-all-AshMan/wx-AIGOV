@@ -1,6 +1,0 @@
-<van-cell-group>
-  <van-cell title="定位查询" icon="location-o" 
-  value="点击进入" label="查询附近的办政地点"
-    link-type="navigateTo"
-  url="../../pages/Location/Location"/>
-</van-cell-group>

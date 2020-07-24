@@ -1,0 +1,80 @@
+.main_image {
+  width: 400rpx;
+  margin-left: 170rpx;
+}
+.progress .progress_item {
+  position: fixed;
+  right: 125rpx;
+  width: 70%;
+}
+.progress .tips {
+  position: fixed;
+  bottom: 700rpx;
+  right: 220rpx;
+  color: #55b7f8;
+  font-size: 40rpx;
+}
+.progress .None_tips {
+  position: fixed;
+  bottom: 600rpx;
+  left: 50rpx;
+  color: #55b7f8;
+  font-size: 40rpx;
+}
+.detail .card_ifo {
+  border: 2rpx solid black;
+  margin-top: 30rpx;
+}
+.detail .card_ifo .detail_item {
+  display: flex;
+  margin-left: 30rpx;
+  margin-top: 50rpx;
+  margin-bottom: 30rpx;
+}
+.detail .card_ifo .detail_item .item_title {
+  color: #55b7f8;
+  margin-right: 20rpx;
+  font-size: 30rpx;
+}
+.detail .card_ifo .detail_item .item_content {
+  width: 200rpx;
+  position: fixed;
+  right: 200rpx;
+  border-bottom: 1rpx solid gray;
+}
+.footer {
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  height: 120rpx;
+  width: 100%;
+  display: flex;
+  padding: 20rpx;
+}
+.footer .toquestion {
+  margin-left: 20rpx;
+  display: flex;
+  flex-direction: column;
+  font-size: 5pt;
+}
+.footer .toquestion image {
+  width: 60rpx;
+}
+.footer .toquestion .minifont {
+  font-size: 5;
+}
+.footer .destory {
+  position: fixed;
+  right: 30rpx;
+  height: 100%;
+}
+.footer .destory button {
+  width: 300rpx;
+  height: 70rpx;
+  margin-bottom: 20rpx;
+  font-size: 10pt;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

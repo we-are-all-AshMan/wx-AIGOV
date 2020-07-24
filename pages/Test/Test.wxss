@@ -1,9 +1,0 @@
-/* .btns-box 
-{  display: flex;  
-  justify-content: space-around;  
-  align-items: center;  
-  position: absolute; 
-   bottom: 50rpx;  
-   width: 100%;  z-index: 100;}
-​.btns-box cover-image 
-{  width: 150rpx;  height: 150rpx;} */

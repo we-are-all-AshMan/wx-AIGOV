@@ -1,0 +1,167 @@
+    <view class="top_notice">
+        <view class="notice_title">
+            ⭕  通知
+        </view>
+        <navigator url="../../pages/home/home" >
+            <view class="notice_item">
+            <image class="" src="https://yanxuan.nosdn.127.net/003d885493ddcc74b1047513bfa32c44.png" mode="widthFix" >
+                
+            </image>
+            
+            <view class="content">
+                    <view class="content_title">
+                        疫情信息
+                    </view>
+                    <view class="content_prim">
+                        最新疫情动态、疫情数据统计
+                    </view>
+                </view>
+            </view>
+        </navigator>
+
+        <navigator url="../../pages/Weather/index" >
+            <view class="notice_item">
+            <image class="" src="https://yanxuan.nosdn.127.net/70a1632177a7af2ae34813694a9c3360.png" mode="widthFix" >
+                
+            </image>
+            <view class="content">
+                 <view class="content_title">
+                    天气状况
+                 </view>
+                 <view class="content_prim">
+                    当前天气状况
+                 </view>
+             </view>
+            </view>
+        </navigator>
+
+          <navigator url="../../pages/zhengce/zhengce" >
+         <view class="notice_item">
+            <image class="" src="https://yanxuan.nosdn.127.net/f3f77d2549f6d5b951611dc9fe814dc5.png" mode="widthFix" >
+                
+            </image>
+            <view class="content">
+                 <view class="content_title">
+                    政策检索
+                 </view>
+                 <view class="content_prim">
+                    最新政策信息
+                 </view>
+             </view>
+         </view>
+                 </navigator>
+    </view>
+    
+
+    <view class="more_interace">
+        <view class="interace_title">
+            ⭕  更多互动
+        </view>
+        <van-grid column-num="4" >
+            <van-grid-item 
+            icon="https://yanxuan.nosdn.127.net/42d423dace525d4f555d453b9b7a9916.png" 
+            text="政务办理" 
+            link-type="navigateTo"
+            url="../../pages/Admaff/Admaff"
+            />
+            <van-grid-item 
+            icon="https://yanxuan.nosdn.127.net/6f9dbecf5e961f607f498003080b497c.png" 
+            text="便民服务" 
+            link-type="navigateTo"
+            url="../../pages/ConService/ConService"
+            />     
+            <van-grid-item 
+            icon="https://yanxuan.nosdn.127.net/b57746eca9baec6cd8b181600898e4a6.png" 
+            text="热门话题" 
+            link-type="navigateTo"
+            url="../../pages/News/News"
+            />      
+            <van-grid-item 
+            icon="https://yanxuan.nosdn.127.net/0bbf8cfbb8ab939d0e851aed5760fe4a.png" 
+            text="专题新闻" 
+            link-type="navigateTo"
+            url="../../pages/News/News"
+            />
+        </van-grid>
+    </view>
+
+    <view class="common_question">
+        <view class="common_title">
+         ⭕   常见问题
+        </view>
+
+        <view class="question_title">
+            户口迁移审批
+        </view>
+        <view class="question_content">
+            <view class="quetion_item">
+                <view class="questionico">
+                    问
+                </view>
+                <view class="question">
+                    准予迁入证明有效期多长
+                </view>
+            </view>
+            <view class="answer_item">
+                <view class="answerico">
+                    答
+                </view>
+                <view class="answer">
+                    四十天
+                </view>
+            </view>
+        </view>
+        <view class="question_mark">
+            是否对您有帮助？ 😀是   😒否
+        </view>
+
+        <view class="question_title">
+            护士执业注册
+        </view>
+        <view class="question_content">
+            <view class="quetion_item">
+                <view class="questionico">
+                    问
+                </view>
+                <view class="question">
+                    办理护士执业注册时的健康体检证明需要哪些医疗机构出具？
+                </view>
+            </view>
+            <view class="answer_item">
+                <view class="answerico">
+                    答
+                </view>
+                <view class="answer">
+                    三级医疗机构或二级综合性医疗机构在6个月内出具
+                </view>
+            </view>
+        </view>
+        <view class="question_mark">
+            是否对您有帮助？ 😀是   😒否
+        </view>
+
+        <view class="question_title">
+            身份证
+        </view>
+        <view class="question_content">
+            <view class="quetion_item">
+                <view class="questionico">
+                    问
+                </view>
+                <view class="question">
+                    考证的时候使用的是一代身份证号码，想申请变更为现在的二代身份证号码可以吗？
+                </view>
+            </view>
+            <view class="answer_item">
+                <view class="answerico">
+                    答
+                </view>
+                <view class="answer">
+                    可以，但是如果您不是正常的一代15位身份证号码变更为二代18位身份证号码，您还需要相关派出所出具的证明
+                </view>
+            </view>
+        </view>
+        <view class="question_mark">
+            是否对您有帮助？ 😀是   😒否
+        </view>
+    </view>

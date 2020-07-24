@@ -1,0 +1,21 @@
+.index_swiper swiper {
+  width: 100%;
+  height: calc(340/750 * 100vw);
+}
+.index_swiper swiper image {
+  width: 100%;
+  height: 100%;
+}
+.region {
+  margin-top: 30rpx;
+  border-top: 3rpx solid #a3d0fa;
+}
+.region image {
+  width: 350rpx;
+}
+.region text {
+  font-weight: 700;
+}
+.region .bold_font {
+  font-weight: 700;
+}

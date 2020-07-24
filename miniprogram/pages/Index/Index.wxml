@@ -1,0 +1,62 @@
+<view class="index">
+
+    <van-grid column-num="3" >
+        <van-grid-item 
+        icon="https://yanxuan.nosdn.127.net/508f9be561d1f25f0e9bf6b499b02a42.png" 
+        text="政务办理" 
+        link-type="navigateTo"
+        url="../../pages/Admaff/Admaff"
+        />
+        <van-grid-item 
+        icon="https://yanxuan.nosdn.127.net/3021c2a46334351dd0851261c6728aa3.png" 
+        text="便民服务" 
+        link-type="navigateTo"
+        url="../../pages/ConService/ConService"
+        />     
+        <van-grid-item 
+        icon="https://yanxuan.nosdn.127.net/84adf32fc366717596ce8b4d654d79ef.png" 
+        text="热门话题" 
+        link-type="navigateTo"
+        url="../../pages/HotNews/HotNews"
+        />      
+    </van-grid>
+
+    <view class="index_swiper">
+        <swiper autoplay="true" indicator-dots="true" circular="true" interval="2000">
+            <swiper-item wx:for="{{swiperList}}" wx:key="id">
+                <navigator url="">
+                    <image mode="widthFix" src="{{item.img}}"/>
+                </navigator>
+            </swiper-item>
+        </swiper>
+    </view>
+
+    <view
+    wx:for="{{hotTopics}}"
+    wx:key="*this"
+    >
+    <i-notice-bar icon="systemprompt" loop>
+        {{item}}
+    </i-notice-bar>
+    </view>
+    
+    <view class="region">
+     <van-grid column-num="2" border="true" >
+         <navigator  url="../../pages/self/self" >
+        <van-grid-item use-slot>
+            <image  mode="widthFix" src="https://yanxuan.nosdn.127.net/4667a55e385fe30fa0a6f4c20a38e926.png" />
+            <text class="bold_font">生活贴士</text>
+            疫情期间如何在家防疫
+        </van-grid-item>         
+        </navigator>
+
+        <navigator  url="../../pages/Meeting/Meeting" >
+        <van-grid-item use-slot>
+            <image mode="widthFix" src="https://yanxuan.nosdn.127.net/d85ae07738f6755c531e41340bdd162a.png" />
+               <text  class="bold_font">会议模块</text>
+            会议记录，语音识别
+        </van-grid-item>
+    </navigator>
+    </van-grid>
+    </view> 
+</view>

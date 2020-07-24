@@ -1,0 +1,99 @@
+<view class="title">
+    <image class="title_image" src="https://yanxuan.nosdn.127.net/91ba847bb184467fd2be1f77875e2eec.png" 
+    mode="widthFix" lazy-load="false" binderror="" bindload="">
+        
+    </image>
+    <view class="title_content">
+        护照办理预约
+    </view>
+</view>
+
+<view class="content">
+    <view class="content_main">
+        <view class="content_title">  所需材料 </view>
+        <van-collapse value="{{ activeNames }}" bind:change="onChange">
+            <van-collapse-item title="护照签发、补发" name="1">
+                <van-cell-group>
+                    <van-cell title="居民身份证"  />
+                    <van-cell title="出入境证件数码相片检测的照相回执"  />
+                    <van-cell title="监护证明"  />
+                    <van-cell title="监护人居民身份证"  />
+                    <van-cell title="委托书"  />
+                    <van-cell title="委托人居民身份证"  />
+                    <van-cell title="按照人事管理权限审批后出具的“关于同意申办出入境证件的函”"  />
+                    <van-cell title="军官（离退休）证"  />
+                    <van-cell title="居住证"  />
+                    <van-cell title="本市户籍直系亲属居民身份证"></van-cell>
+                    <van-cell title="相关亲属关系证明"></van-cell>
+                    <van-cell title="中国公民出入境证件申请表"></van-cell>
+                </van-cell-group>
+            </van-collapse-item>
+            <van-collapse-item title="护照换发" name="2">
+                  <van-cell-group>
+                    <van-cell title="居民身份证"  />
+                    <van-cell title="出入境证件数码相片检测的照相回执"  />
+                    <van-cell title="监护证明"  />
+                    <van-cell title="监护人居民身份证"  />
+                    <van-cell title="委托书"  />
+                    <van-cell title="委托人居民身份证"  />
+                    <van-cell title="按照人事管理权限审批后出具的“关于同意申办出入境证件的函”"  />
+                    <van-cell title="军官（离退休）证"  />
+                    <van-cell title="相关亲属关系证明"  />
+                    <van-cell title="  居住6个月（含）以上的暂住证明"></van-cell>
+                    <van-cell title="中华人民共和国护照原证"></van-cell>
+                    <van-cell title="中国公民出入境证件申请表"></van-cell>
+                </van-cell-group>
+            </van-collapse-item>
+            <van-collapse-item title="护照加注" name="3" >
+                  <van-cell-group>
+                    <van-cell title="居民身份证"  />
+                    <van-cell title="中华人民共和国普通护照原证"  />
+                    <van-cell title="户口簿"  />
+                    <van-cell title="曾用名加注备注页、英文姓名证明材料、非标准汉语拼音姓名证明材料"  />                </van-cell-group>
+            </van-collapse-item>
+        </van-collapse>
+    </view>
+
+    <image class="content_image" src="https://yanxuan.nosdn.127.net/ca9f1f33b535646f9f310871c6e6ae86.png" 
+    mode="widthFix" lazy-load="false" binderror="" bindload="">
+        
+    </image>
+
+<!-- 
+      <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+    <input value='{{time}}' placeholder='选择时间'/>
+        </picker>
+ -->
+
+
+</view>
+
+
+<view class="footer">
+    <navigator url="../../pages/Question/Question">
+    <view class="toquestion">
+        <image src="../../icos/kefu1.png" mode="widthFix" >
+        </image>
+        <view class="minifont">
+        在线咨询
+        </view>
+    </view>
+    </navigator>
+
+      <!-- <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}"> -->
+    <picker class='time-picker' mode="multiSelector" bindchange="bindStartMultiPickerChange" 
+    bindtap='pickerTap' bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+        <view class="newstep">
+            <button plain type="primary" bindtap="appointment">预约</button>
+        </view>
+    </picker>
+    <!-- </picker> -->
+
+    <navigator url="../../pages/Location/Location">
+        <view class="query">
+            <button plain type="primary" >查看附近办事地点</button>
+        </view>
+    </navigator>
+
+</view>
+

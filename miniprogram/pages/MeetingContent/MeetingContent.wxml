@@ -1,0 +1,31 @@
+<view class="content_title">
+    <image class="content_image" src="https://yanxuan.nosdn.127.net/ba953b2d222bb70fd4b4db6b84a4c7e0.png" 
+    mode="widthFix" lazy-load="false" binderror="" bindload="">
+        
+    </image>
+    <input class="title" value="{{title}}"> 
+    </input>
+</view>
+
+<view class="content_main">
+    <textarea class="main" value="contexts">
+
+    </textarea>
+</view>
+
+<view class="Content_footer">
+    <!-- <view class="toquestion">
+        <image src="../../icos/kefu1.png" mode="widthFix" >
+        </image>
+        <view class="minifont">
+        在线咨询
+        </view>
+    </view> -->
+    <view class="newstep">
+        <button plain type="primary" bindtap="saveRecord">保存修改</button>
+    </view>
+    <view class="query">
+        <button plain type="warn" bindtap="deleteRecord">删除记录</button>
+    </view>
+</view>
+<van-toast id="van-toast" />

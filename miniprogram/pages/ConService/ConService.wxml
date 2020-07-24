@@ -1,0 +1,14 @@
+<van-cell-group>
+  <van-cell title="定位查询" icon="location-o" 
+  value="点击进入" label="查询附近的办政地点"
+    link-type="navigateTo"
+  url="../../pages/Location/Location"/>
+   <van-cell title="会议记录" icon="chat-o" 
+  value="点击进入" label="快速语音转文字"
+    link-type="navigateTo"
+  url="../../pages/Meeting/Meeting"/>
+   <van-cell title="事务预约" icon="todo-list-o"
+  value="点击进入" label="预约办理护照"
+    link-type="navigateTo"
+  url="../../pages/HuzhaoYuyue/HuzhaoYuyue"/>
+</van-cell-group>

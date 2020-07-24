@@ -1,0 +1,80 @@
+<image class="main_image" src="https://s1.ax1x.com/2020/07/20/U4TShj.png" 
+mode="widthFix" lazy-load="false" binderror="" bindload="">
+    
+</image>
+
+
+<view class="progress" wx:if="{{state==3}}">
+    <view class="progress_item">
+    <van-progress percentage="70" stroke-width="8"
+    pivot-text="正在办理"/>
+    </view>
+    <view class="tips">
+        正在为您办理，请稍后
+    </view>
+</view>
+
+<view class="progress" wx:if="{{state==0}}">
+    <view class="progress_item">
+    <van-progress percentage="0" stroke-width="8"
+    pivot-text="未办理"/>
+    </view>
+    <view class="None_tips">
+        您还未申请相关服务，请点击下方申请
+    </view>
+
+
+
+</view>
+
+<view class="detail" wx:elif="{{state==4}}">
+    <view>
+    <van-progress percentage="100" stroke-width="8"
+    pivot-text="办理完成"/>
+    </view>
+
+    <!-- <view class="card_ifo">
+        <view class="detail_item">
+            <view class="item_title">
+                姓名：
+            </view>
+            <view class="item_content">
+                {{ifo.name}}
+            </view>
+        </view>
+        <view class="detail_item">
+            <view class="item_title">
+                社会保障号：
+            </view>
+            <view class="item_content">
+                {{ifo.socialSecurityNumber}}
+            </view>
+        </view>
+        <view class="detail_item">
+            <view class="item_title">
+                社保卡号：
+            </view>
+            <view class="item_content">
+                {{ifo.socialSecurityCardNumber}}
+            </view>
+        </view> -->
+    <!-- </view> -->
+</view>
+
+
+<view class="footer">
+    <view class="toquestion">
+        <image src="../../icos/kefu1.png" mode="widthFix" >
+        </image>
+        <view class="minifont">
+        在线咨询
+        </view>
+    </view>
+    <view class="destory" wx:if="{{state==4}}">
+        <button plain type="warn" bindtap="destoryCard">查看该卡</button>
+    </view>
+    <view class="destory" wx:elif="{{state==0}}">
+        <button plain type="primary" bindtap="gotoHandle">立即办理</button>
+    </view>
+
+</view>

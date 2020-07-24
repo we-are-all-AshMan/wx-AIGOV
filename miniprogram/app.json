@@ -1,0 +1,86 @@
+{
+  "pages": [
+    "pages/User/User",
+    "pages/Question/Question",
+    "pages/YiqingIfo/YiqingIfo",
+    "pages/Index/Index",
+    "pages/TeamIfo/TeamIfo",
+    "pages/Admaff/Admaff",
+    "pages/ConService/ConService",
+    "pages/Location/Location",
+    "pages/Interact/Interact",
+    "pages/HandleAffair/HandleAffair",
+    "pages/Telephone/Telephone",
+    "pages/ETC/ETC",
+    "pages/ETC1/ETC1",
+    "pages/ETCquery/ETCquery",
+    "pages/Shebao/Shebao",
+    "pages/Shebao2/Shebao2",
+    "pages/Shebaoquery/Shebaoquery",
+    "pages/Meeting/Meeting",
+    "pages/MeetingRecord/MeetingRecord",
+    "pages/zhengce/zhengce",
+    "pages/zhengceDetail/zhengceDetail",
+    "pages/News/News",
+    "pages/NewsDetail/NewsDetail",
+    "pages/ShenfenQuery/ShenfenQuery",
+    "pages/Weather/index",
+    "pages/home/home",
+    "pages/self/self",
+    "pages/MeetingContent/MeetingContent",
+    "pages/HuzhaoYuyue/HuzhaoYuyue",
+    "pages/yuyueRecord/yuyueRecord",
+    "pages/HotNews/HotNews",
+    "pages/MyAffair/MyAffair",
+    "pages/HotComment/HotComment"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#55b7f8",
+    "navigationBarTitleText": "AIGOV",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#55b7f8",
+    "list": [
+      {
+        "pagePath": "pages/Index/Index",
+        "text": "首页",
+        "iconPath": "icos/home.png",
+        "selectedIconPath": "icos/home.png"
+      },
+      {
+        "pagePath": "pages/Interact/Interact",
+        "text": "事务中心",
+        "iconPath": "icos/affair.png",
+        "selectedIconPath": "icos/affair.png"
+      },
+      {
+        "pagePath": "pages/Question/Question",
+        "text": "智能客服",
+        "iconPath": "icos/question.png",
+        "selectedIconPath": "icos/question.png"
+      },
+      {
+        "pagePath": "pages/User/User",
+        "text": "用户",
+        "iconPath": "icos/friend.png",
+        "selectedIconPath": "icos/friend.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "plugins": {
+    "WechatSI": {
+      "version": "0.3.1",
+      "provider": "wx069ba97219f66d99"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "天气状况",
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+  }
+}

@@ -1,0 +1,50 @@
+<van-search
+  value="{{ value }}"
+  placeholder="请输入搜索关键词"
+  shape="round"
+  background="#55b7f8"
+  input-align="center"
+  show-action
+  bind:search="onSearch"
+  bind:cancel="onCancel"
+  bind:change="inputChange"
+  use-action-slot
+>
+<view slot="action" bind:tap="onClick">搜索</view>
+</van-search>
+
+<view class="radio_group" style="display: flex; align-items: center; justify-content: center;">
+    <van-radio-group value="{{ radio }}" bind:change="changeChoose" style="display: flex;">
+        <van-radio name="1" checked-color="#07c160" style="margin-right: 30rpx;">标签检索</van-radio>
+        <van-radio name="2" checked-color="#07c160">题目检索</van-radio>
+    </van-radio-group>
+</view>
+
+
+
+
+<van-cell-group wx:if="{{showByTag}}">
+    <van-cell 
+    wx:for="{{searchResult}}" wx:key="title"
+    title="{{item}}" 
+    is-link value="点击查看"  link-type="navigateTo"
+    url="../../pages/zhengceDetail/zhengceDetail?title={{item}}" />
+</van-cell-group>
+
+<van-cell-group wx:if="{{showByTitle}}">
+    <van-cell 
+    wx:for="{{searchResult}}" wx:key="title"
+    title="{{item}}" 
+    is-link value="点击查看"  link-type="navigateTo"
+    url="../../pages/zhengceDetail/zhengceDetail?title={{item}}" />
+</van-cell-group>
+
+<van-cell-group wx:else>
+    <van-cell 
+    wx:for="{{zhengceList}}" wx:key="title"
+    title="{{item.title}}" 
+    value="{{item.title}}" 
+    is-link value="{{item.tag}}"  link-type="navigateTo"
+    url="../../pages/zhengceDetail/zhengceDetail?title={{item.title}}" />
+</van-cell-group>
+

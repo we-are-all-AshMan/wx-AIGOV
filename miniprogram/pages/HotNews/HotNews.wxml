@@ -1,0 +1,36 @@
+<view class="hotnews_list">
+
+    <image class="title_image" src="https://yanxuan.nosdn.127.net/674561f1d1362ef15773e115563ca055.png" 
+    mode="widthFix" 
+    lazy-load="false" binderror="" bindload="">
+    </image>
+
+    <view class="news_list">
+        <!-- <view class="news_item">
+        新闻1
+        </view>
+        <view class="news_item">
+        新闻1
+        </view>
+        <view class="news_item">
+        新闻1
+        </view>
+        <view class="news_item">
+        新闻1
+        </view> -->
+    </view>
+</view>
+    <van-cell-group>
+        <van-cell class="cell_color"
+        wx:for="{{hotNewsList}}" wx:key="{{item.title}}"
+        value="🔥{{item.hot_count}}"  label="{{item.time}}" 
+        bindtap="gotoHotComment" data-id='{{item.newsid}}'
+        >
+              <view slot="title">
+                <view class="van-cell-text">{{item.title}}</view>
+                <van-tag type="{{item.sentiment==-1?'danger':'primary'}}">
+                {{item.sentiment==-1?'负面':'正面'}}
+                </van-tag>
+             </view>
+        </van-cell>
+    </van-cell-group>

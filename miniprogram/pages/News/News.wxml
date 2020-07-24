@@ -1,0 +1,45 @@
+
+<van-search
+  value="{{ value }}"
+  placeholder="请输入像搜索的话题"
+  shape="round"
+  background="#55b7f8"
+  input-align="center"
+  show-action
+  bind:search="onSearch"
+  bind:cancel="onCancel"
+  bind:change="inputChange"
+  use-action-slot
+>
+<view slot="action" bind:tap="onClick">搜索</view>
+</van-search>
+
+<image class="title_image"  src="https://s1.ax1x.com/2020/07/24/UXRwEq.gif" mode="widthFix" lazy-load="false" >
+</image>
+
+<view class="title">
+<view class="tags">
+    <van-tag wx:for="{{tagList}}" wx:key="Id" 
+    size="medium" round style="margin: 20rpx;"
+    color="{{item.isadded?'#f2826a':'#999999'}}">
+        <view bindtap="handleclick" id="{{item.Id}}"
+        data-index="{{index}}"
+        >
+        {{item.tag}}
+        </view>
+    </van-tag>
+
+</view>
+</view>
+
+<view class="title_list">
+    <van-cell-group>
+        <van-cell 
+        wx:for="{{titleList}}" wx:key="id"
+        title="{{item.title}}" is-link 
+        value="点击查看" 
+        label="{{item.date}}"
+        link-type="navigateTo"
+        url="../../pages/NewsDetail/NewsDetail?url={{item.url}}&&title={{item.title}}" />
+    </van-cell-group>
+</view>
